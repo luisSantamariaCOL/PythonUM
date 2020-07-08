@@ -1,2 +1,2 @@
 # PythonUM
-text version of the Python For Everybody Specialization of University of Michigan.
+This is the text version of the Python For Everybody Specialization of University of Michigan.
