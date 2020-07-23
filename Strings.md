@@ -78,4 +78,32 @@ s[0:4]
 
 ![methods](https://i.imgur.com/3XjRMWD.png)
 
-[String documentation]: (https://docs.python.org/3/library/stdtypes.html#string-methods)
+String documentation: https://docs.python.org/3/library/stdtypes.html#string-methods
+
+### String library
+
+![String library](https://i.imgur.com/rMUSvT3.png)
+
+### Searching a String
+
+* We use the **find()** function to search for a substring within another string
+* **find()** finds the first occurrence of the substring
+* If the substring is not found, **find()** return -1
+
+![Searching for a String code](https://i.imgur.com/Ug7PC9t.png)
+
+### Search and Replace
+
+![Searche and Replace](https://i.imgur.com/KmJ7IyU.png)
+
+### Stripping Withespace
+
+![Stripping Withespace](https://i.imgur.com/Qe7Vjmv.png)
+
+### Prefixes
+
+![Prefixes](https://i.imgur.com/B7qltEG.png)
+
+### Parsing and Extracting
+
+![Parsing and Extracting code](https://i.imgur.com/sXWwmv0.png)
