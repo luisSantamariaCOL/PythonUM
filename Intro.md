@@ -57,3 +57,31 @@ Parenthesis > Power > Multiplication > Addition > Left to Right
 
 * Cannot "add 1" to a string.
 * We can ask Python what type something is by using the **type(somenthing)** function
+
+### Type Conversions
+
+    >>> print(float(99) + 100)  
+    199.0
+
+### Integer Division
+
+    >>> print(9/2)
+    4.5
+
+* Integer Division produces a floating point result.  
+
+### String Conversions
+
+* You can also use int() and float() to convert between strings and integers.
+
+### User Input
+
+    nam = input('who are you?')
+    print('Welcome', nam)
+    
+* **input()** instruct Python to pause and read data.  
+* The **input()** function returns a string  
+
+### Coments in Python     ->      **#**
+
+### Comparison Operators
