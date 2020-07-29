@@ -1,4 +1,4 @@
-### List
+## List
 
 A list is a **collection**
 
@@ -74,3 +74,27 @@ A list is a **collection**
 ![average code](https://i.imgur.com/MBRh4wx.png)
 
 
+## Lists and Strings
+
+### split method
+
+* Split breaks a string into parts and produces a list of strings. We think of these as words. We can **access** a particular word or loop through all the words.  
+
+![split list](https://i.imgur.com/qPtBQ3G.png)
+
+* When you do not specify a **delimiter**, multiple spaces are treated like one delimiter.
+* You can specify what **delimiter** character to use in the **spliting**
+
+      thing = line.split(';')
+      
+### Split implementation
+
+![split implementation](https://i.imgur.com/rLw4oDw.png)
+
+### List exercise 1
+
+![exercise 1](https://i.imgur.com/C5Qfz1r.png)
+
+### List exercise 2
+
+![exercise 2](https://i.imgur.com/GLVBDl1.png)
