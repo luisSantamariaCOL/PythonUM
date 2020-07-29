@@ -34,3 +34,43 @@ A list is a **collection**
 * We can construct an index loop using for and an integer iterator
 
 ![Two loops](https://i.imgur.com/iQAnCXm.png)
+
+### List can concatenate
+
+                  a = [1, 2, 3]
+                  b = [4, 5, 6]
+                  c = a + b
+                  print(c)
+                  [1, 2, 3, 4, 5, 6]
+                
+### Building a List from Scratch
+
+![building list](https://i.imgur.com/f4qQUZz.png)
+
+### Is Something in a List?
+
+* Python provides two operators that let you check if an item is in a list.
+* These are logical operators that return True or False
+* They do not modify the lsit
+
+                  some = [1, 9, 21, 10, 16]
+                  9 in some
+                  True
+                  15 in some
+                  False
+                  20 not in some
+                  True
+                
+### List are in Order
+
+![List in order](https://i.imgur.com/Owy4Fkw.png)
+
+### Built-in Functions and Lists
+
+![built-in functions](https://i.imgur.com/BOuQ2xB.png)
+
+### Average Program with Lists
+
+![average code](https://i.imgur.com/MBRh4wx.png)
+
+
