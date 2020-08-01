@@ -44,13 +44,13 @@ We can even omit the parentheses
         
 ## Tuples and Dictionaries
 
-The **items() method in dictionaries returns a list of (key, value) **tuples**
+The **items()** method in dictionaries returns a list of (key, value) **tuples**
 
         >>> d = dict()
         >>> d['csev'] = 2
         >>> d['cwen'] = 4
         >>> for (k, v) in d.items():
-                pritn(k, v)
+                print(k, v)
         ...
         csev 2
         cwen 4
@@ -77,3 +77,9 @@ The **items() method in dictionaries returns a list of (key, value) **tuples**
 ## The top 10 most common words Code
 
 ![](https://i.imgur.com/FAEUreu.png)
+
+## EVEN SHORTER
+
+![](https://i.imgur.com/sARPOvf.png)
+
+
