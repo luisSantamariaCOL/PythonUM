@@ -8,7 +8,7 @@ Tuples are another kind of sequence that functions much like a list
 
 ![tuples](https://i.imgur.com/Y9Es4dk.png)
 
-## Difference with Arrays : Immutable
+## Difference with Lists : Immutable
 
 * Tuples are immutable
   * Unlike a list, once you create a **tuple**, you **cannot alter** its contents - similar to a string
@@ -83,3 +83,14 @@ The **items()** method in dictionaries returns a list of (key, value) **tuples**
 ![](https://i.imgur.com/sARPOvf.png)
 
 
+### Note
+
+This code creates a list of tuples where each tuple is a value, key pai
+
+     tmp = list()
+     for k, v in c.items() :
+         tmp.append( (v, k) )
+
+### Assignment 10.2 
+
+![](https://i.imgur.com/skvMLbG.png)
