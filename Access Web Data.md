@@ -125,3 +125,52 @@ urlwords.py:
 * HyperText Transfer Protocol (HTTP) is a simple yet powerful protocol
 * Python has good support for sockets, HTTP, and HTML parsing
 
+# Exercise 1
+
+exercise: https://www.py4e.com/tools/python-data/index.php?PHPSESSID=7838753b0c44d2ac7782e43e7c87cf6a
+
+Lee los tag span de una pagina html, extrae los numeros e imprime la suma de todos ellos.  
+### Formato:  
+
+      <tr><td>Modu</td><td><span class="comments">90</span></td></tr>  
+      <tr><td>Kenzie</td><td><span class="comments">88</span></td></tr>  
+      <tr><td>Hubert</td><td><span class="comments">87</span></td></tr>  
+
+You are to find all the <span> tags in the file and pull out the numbers from the tag and sum the numbers.  
+      
+### output:  
+
+$ python3 solution.py  
+Enter - http://py4e-data.dr-chuck.net/comments_42.html  
+Count 50  
+Sum 2...  
+
+### Code:  
+
+      import urllib.request, urllib.parse, urllib.error
+      from bs4 import BeautifulSoup
+      import ssl
+      import re
+      # sample data: http://py4e-data.dr-chuck.net/comments_42.html
+      # actual data: http://py4e-data.dr-chuck.net/comments_781706.html
+
+      # ignore SSL certificate errors
+      ctx = ssl.create_default_context()
+      ctx.check_hostname = False
+      ctx.verify_mode = ssl.CERT_NONE
+
+      url = input('Enter - ')
+      html = urllib.request.urlopen(url, context = ctx).read() # read the whole thing
+      soup = BeautifulSoup(html, 'html.parser')
+
+      # Retrieve all of the anchort tags
+      sum = 0
+      tags = soup('span') # give me the '' tag
+      for tag in tags:
+          line = tag.decode()
+          stuff = re.findall('[0-9]+', line)
+          if len(stuff) == 0 : continue
+          num = int(stuff[0])
+          sum += num
+      print('count', len(tags))
+      print('sum', sum)
